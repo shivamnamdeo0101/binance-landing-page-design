@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import HeaderComp from "./comp/HeaderComp";
+import CoverComp from "./comp/CoverComp";
+import BlogComp from "./comp/BlogComp";
+import ProductComp from "./comp/ProductComp";
+import FaqComp from "./comp/FaqComp";
+import FooterComp from "./comp/FooterComp";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import "./App.css";
+const App = () => {
+	return (
+		<div className="app">
+			<HeaderComp />
+			<CoverComp/>
+			<BlogComp />
+			<ProductComp />
+			<FaqComp />
+			<FooterComp />
+		</div>
+	)
 }
 
-export default App;
+export default App
